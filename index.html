@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Mehrwertsteuer Rechner</title>
+</head>
+<body>
+    <main>
+        <h1>kalorienrechner</h1>
+        <form>
+            <label for="Körpergröße">Körpergröße</label><br>
+            <input type="number" name="" id="bodyHeight" maxlength="3" min="20" placeholder="CM"><br>
+            <label for="Alter">Alter</label><br>
+            <input type="number" name="" id="age" maxlength="3" max="120" placeholder="Year"><br>
+            <label for="Gewicht">Gewicht</label><br>
+            <input type="number" name="" id="weight" maxlength="3" max="999" placeholder="Kg"><br>
+            <input type="radio" name="gender" id="female">
+            <label for="">Weiblich</label>
+            <input type="radio" name="gender" id="male">
+            <label for="">Mänlich</label>
+            <select name="" id="movement">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="2.2">Körperlich anstregende berufliche Arbeit</option>
+            </select>
+            <button onclick="calculate()">Submit</button>
+        </form>
+        <article>
+            <div>
+                <p></p>
+                <p>kcal</p>
+                <p>kJ</p>
+            </div>
+            <p>Grundumsatz</p>
+            <p id="baseCal"></p>
+            <p id="baseJ"></p>
+            <p>Gesamtumsatz</p>
+            <p id="totalCal"></p>
+            <p id="totalJ"></p>
+        </article>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
